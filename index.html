@@ -101,68 +101,64 @@
 <a class="sourceLine" id="cb2-6" data-line-number="6"><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/library">library</a></span>(glue)</a></code></pre></div>
 <p>Combined data-base tables.</p>
 <div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb3-1" data-line-number="1"><span class="kw"><a href="reference/master.html">master</a></span>()</a>
-<a class="sourceLine" id="cb3-2" data-line-number="2"><span class="co">#&gt; Joining `allodb::equations` with `allodb::sitespecies` by 'equation_id'.</span></a>
-<a class="sourceLine" id="cb3-3" data-line-number="3"><span class="co">#&gt; Then joining with `allodb::sites_info` by 'site'.</span></a>
-<a class="sourceLine" id="cb3-4" data-line-number="4"><span class="co">#&gt; # A tibble: 805 x 43</span></a>
-<a class="sourceLine" id="cb3-5" data-line-number="5"><span class="co">#&gt;    ref_id equation_id equation_allome… equation_form dependent_varia…</span></a>
-<a class="sourceLine" id="cb3-6" data-line-number="6"><span class="co">#&gt;    &lt;chr&gt;  &lt;chr&gt;       &lt;chr&gt;            &lt;chr&gt;         &lt;chr&gt;           </span></a>
-<a class="sourceLine" id="cb3-7" data-line-number="7"><span class="co">#&gt;  1 jenki… 2060ea      10^(1.1891+1.41… 10^(a+b*(log… Total abovegrou…</span></a>
-<a class="sourceLine" id="cb3-8" data-line-number="8"><span class="co">#&gt;  2 jenki… 2060ea      10^(1.1891+1.41… 10^(a+b*(log… Total abovegrou…</span></a>
-<a class="sourceLine" id="cb3-9" data-line-number="9"><span class="co">#&gt;  3 jenki… a4d879      10^(1.2315+1.63… 10^(a+b*(log… Total abovegrou…</span></a>
-<a class="sourceLine" id="cb3-10" data-line-number="10"><span class="co">#&gt;  4 jenki… a4d879      10^(1.2315+1.63… 10^(a+b*(log… Total abovegrou…</span></a>
-<a class="sourceLine" id="cb3-11" data-line-number="11"><span class="co">#&gt;  5 jenki… c59e03      exp(7.217+1.514… exp(a+b*log(… Stem biomass (w…</span></a>
-<a class="sourceLine" id="cb3-12" data-line-number="12"><span class="co">#&gt;  6 jenki… c59e03      exp(7.217+1.514… exp(a+b*log(… Stem biomass (w…</span></a>
-<a class="sourceLine" id="cb3-13" data-line-number="13"><span class="co">#&gt;  7 jenki… c59e03      exp(7.217+1.514… exp(a+b*log(… Stem biomass (w…</span></a>
-<a class="sourceLine" id="cb3-14" data-line-number="14"><span class="co">#&gt;  8 jenki… c59e03      exp(7.217+1.514… exp(a+b*log(… Stem biomass (w…</span></a>
-<a class="sourceLine" id="cb3-15" data-line-number="15"><span class="co">#&gt;  9 jenki… c59e03      exp(7.217+1.514… exp(a+b*log(… Stem biomass (w…</span></a>
-<a class="sourceLine" id="cb3-16" data-line-number="16"><span class="co">#&gt; 10 jenki… c59e03      exp(7.217+1.514… exp(a+b*log(… Stem biomass (w…</span></a>
-<a class="sourceLine" id="cb3-17" data-line-number="17"><span class="co">#&gt; # … with 795 more rows, and 38 more variables: independent_variable &lt;chr&gt;,</span></a>
-<a class="sourceLine" id="cb3-18" data-line-number="18"><span class="co">#&gt; #   allometry_specificity &lt;chr&gt;, geographic_area &lt;chr&gt;, dbh_min_cm &lt;chr&gt;,</span></a>
-<a class="sourceLine" id="cb3-19" data-line-number="19"><span class="co">#&gt; #   dbh_max_cm &lt;chr&gt;, sample_size &lt;chr&gt;, dbh_units_original &lt;chr&gt;,</span></a>
-<a class="sourceLine" id="cb3-20" data-line-number="20"><span class="co">#&gt; #   biomass_units_original &lt;chr&gt;, allometry_development_method &lt;chr&gt;,</span></a>
-<a class="sourceLine" id="cb3-21" data-line-number="21"><span class="co">#&gt; #   regression_model &lt;chr&gt;, other_equations_tested &lt;chr&gt;,</span></a>
-<a class="sourceLine" id="cb3-22" data-line-number="22"><span class="co">#&gt; #   log_biomass &lt;chr&gt;, bias_corrected &lt;chr&gt;, bias_correction_factor &lt;chr&gt;,</span></a>
-<a class="sourceLine" id="cb3-23" data-line-number="23"><span class="co">#&gt; #   notes_fitting_model &lt;chr&gt;, original_data_availability &lt;chr&gt;,</span></a>
-<a class="sourceLine" id="cb3-24" data-line-number="24"><span class="co">#&gt; #   warning &lt;chr&gt;, site &lt;chr&gt;, family &lt;chr&gt;, species &lt;chr&gt;,</span></a>
-<a class="sourceLine" id="cb3-25" data-line-number="25"><span class="co">#&gt; #   species_code &lt;chr&gt;, life_form &lt;chr&gt;, equation_group &lt;chr&gt;,</span></a>
-<a class="sourceLine" id="cb3-26" data-line-number="26"><span class="co">#&gt; #   equation_taxa &lt;chr&gt;, notes_on_species &lt;chr&gt;, wsg_id &lt;chr&gt;,</span></a>
-<a class="sourceLine" id="cb3-27" data-line-number="27"><span class="co">#&gt; #   wsg_specificity &lt;chr&gt;, id &lt;chr&gt;, Site &lt;chr&gt;, lat &lt;chr&gt;, long &lt;chr&gt;,</span></a>
-<a class="sourceLine" id="cb3-28" data-line-number="28"><span class="co">#&gt; #   UTM_Zone &lt;chr&gt;, UTM_X &lt;chr&gt;, UTM_Y &lt;chr&gt;, intertropical &lt;chr&gt;,</span></a>
-<a class="sourceLine" id="cb3-29" data-line-number="29"><span class="co">#&gt; #   size.ha &lt;chr&gt;, E &lt;chr&gt;, wsg.site.name &lt;chr&gt;</span></a></code></pre></div>
+<a class="sourceLine" id="cb3-2" data-line-number="2"><span class="co">#&gt; Joining `equations` and `sitespecies` by 'equation_id'; then `sites_info` by 'site'.</span></a>
+<a class="sourceLine" id="cb3-3" data-line-number="3"><span class="co">#&gt; # A tibble: 763 x 43</span></a>
+<a class="sourceLine" id="cb3-4" data-line-number="4"><span class="co">#&gt;    ref_id equation_id equation_allome… equation_form dependent_varia…</span></a>
+<a class="sourceLine" id="cb3-5" data-line-number="5"><span class="co">#&gt;    &lt;chr&gt;  &lt;chr&gt;       &lt;chr&gt;            &lt;chr&gt;         &lt;chr&gt;           </span></a>
+<a class="sourceLine" id="cb3-6" data-line-number="6"><span class="co">#&gt;  1 jenki… 2060ea      10^(1.1891+1.41… 10^(a+b*(log… Total abovegrou…</span></a>
+<a class="sourceLine" id="cb3-7" data-line-number="7"><span class="co">#&gt;  2 jenki… 2060ea      10^(1.1891+1.41… 10^(a+b*(log… Total abovegrou…</span></a>
+<a class="sourceLine" id="cb3-8" data-line-number="8"><span class="co">#&gt;  3 jenki… a4d879      10^(1.2315+1.63… 10^(a+b*(log… Total abovegrou…</span></a>
+<a class="sourceLine" id="cb3-9" data-line-number="9"><span class="co">#&gt;  4 jenki… a4d879      10^(1.2315+1.63… 10^(a+b*(log… Total abovegrou…</span></a>
+<a class="sourceLine" id="cb3-10" data-line-number="10"><span class="co">#&gt;  5 jenki… c59e03      exp(7.217+1.514… exp(a+b*log(… Stem biomass (w…</span></a>
+<a class="sourceLine" id="cb3-11" data-line-number="11"><span class="co">#&gt;  6 jenki… c59e03      exp(7.217+1.514… exp(a+b*log(… Stem biomass (w…</span></a>
+<a class="sourceLine" id="cb3-12" data-line-number="12"><span class="co">#&gt;  7 jenki… c59e03      exp(7.217+1.514… exp(a+b*log(… Stem biomass (w…</span></a>
+<a class="sourceLine" id="cb3-13" data-line-number="13"><span class="co">#&gt;  8 jenki… c59e03      exp(7.217+1.514… exp(a+b*log(… Stem biomass (w…</span></a>
+<a class="sourceLine" id="cb3-14" data-line-number="14"><span class="co">#&gt;  9 jenki… c59e03      exp(7.217+1.514… exp(a+b*log(… Stem biomass (w…</span></a>
+<a class="sourceLine" id="cb3-15" data-line-number="15"><span class="co">#&gt; 10 jenki… c59e03      exp(7.217+1.514… exp(a+b*log(… Stem biomass (w…</span></a>
+<a class="sourceLine" id="cb3-16" data-line-number="16"><span class="co">#&gt; # … with 753 more rows, and 38 more variables: independent_variable &lt;chr&gt;,</span></a>
+<a class="sourceLine" id="cb3-17" data-line-number="17"><span class="co">#&gt; #   allometry_specificity &lt;chr&gt;, geographic_area &lt;chr&gt;, dbh_min_cm &lt;chr&gt;,</span></a>
+<a class="sourceLine" id="cb3-18" data-line-number="18"><span class="co">#&gt; #   dbh_max_cm &lt;chr&gt;, sample_size &lt;chr&gt;, dbh_units_original &lt;chr&gt;,</span></a>
+<a class="sourceLine" id="cb3-19" data-line-number="19"><span class="co">#&gt; #   biomass_units_original &lt;chr&gt;, allometry_development_method &lt;chr&gt;,</span></a>
+<a class="sourceLine" id="cb3-20" data-line-number="20"><span class="co">#&gt; #   regression_model &lt;chr&gt;, other_equations_tested &lt;chr&gt;,</span></a>
+<a class="sourceLine" id="cb3-21" data-line-number="21"><span class="co">#&gt; #   log_biomass &lt;chr&gt;, bias_corrected &lt;chr&gt;, bias_correction_factor &lt;chr&gt;,</span></a>
+<a class="sourceLine" id="cb3-22" data-line-number="22"><span class="co">#&gt; #   notes_fitting_model &lt;chr&gt;, original_data_availability &lt;chr&gt;,</span></a>
+<a class="sourceLine" id="cb3-23" data-line-number="23"><span class="co">#&gt; #   warning &lt;chr&gt;, site &lt;chr&gt;, family &lt;chr&gt;, species &lt;chr&gt;,</span></a>
+<a class="sourceLine" id="cb3-24" data-line-number="24"><span class="co">#&gt; #   species_code &lt;chr&gt;, life_form &lt;chr&gt;, equation_group &lt;chr&gt;,</span></a>
+<a class="sourceLine" id="cb3-25" data-line-number="25"><span class="co">#&gt; #   equation_taxa &lt;chr&gt;, notes_on_species &lt;chr&gt;, wsg_id &lt;chr&gt;,</span></a>
+<a class="sourceLine" id="cb3-26" data-line-number="26"><span class="co">#&gt; #   wsg_specificity &lt;chr&gt;, id &lt;chr&gt;, Site &lt;chr&gt;, lat &lt;chr&gt;, long &lt;chr&gt;,</span></a>
+<a class="sourceLine" id="cb3-27" data-line-number="27"><span class="co">#&gt; #   UTM_Zone &lt;chr&gt;, UTM_X &lt;chr&gt;, UTM_Y &lt;chr&gt;, intertropical &lt;chr&gt;,</span></a>
+<a class="sourceLine" id="cb3-28" data-line-number="28"><span class="co">#&gt; #   size.ha &lt;chr&gt;, E &lt;chr&gt;, wsg.site.name &lt;chr&gt;</span></a></code></pre></div>
 <p>Conservatively, all columns of <code><a href="reference/master.html">master()</a></code> are character vectors.</p>
 <div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb4-1" data-line-number="1"><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/all">all</a></span>(<span class="kw"><a href="https://purrr.tidyverse.org/reference/map.html">map_lgl</a></span>(<span class="kw"><a href="reference/master.html">master</a></span>(), is.character))</a>
-<a class="sourceLine" id="cb4-2" data-line-number="2"><span class="co">#&gt; Joining `allodb::equations` with `allodb::sitespecies` by 'equation_id'.</span></a>
-<a class="sourceLine" id="cb4-3" data-line-number="3"><span class="co">#&gt; Then joining with `allodb::sites_info` by 'site'.</span></a>
-<a class="sourceLine" id="cb4-4" data-line-number="4"><span class="co">#&gt; [1] TRUE</span></a></code></pre></div>
+<a class="sourceLine" id="cb4-2" data-line-number="2"><span class="co">#&gt; Joining `equations` and `sitespecies` by 'equation_id'; then `sites_info` by 'site'.</span></a>
+<a class="sourceLine" id="cb4-3" data-line-number="3"><span class="co">#&gt; [1] TRUE</span></a></code></pre></div>
 <p>This is to preserve different representations of missing values.</p>
 <div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb5-1" data-line-number="1">na_type &lt;-<span class="st"> </span><span class="kw"><a href="https://www.rdocumentation.org/packages/glue/topics/glue">glue</a></span>(<span class="st">"^{missing_values_metadata$Code}$"</span>) <span class="op">%&gt;%</span><span class="st"> </span><span class="kw"><a href="https://www.rdocumentation.org/packages/glue/topics/glue_collapse">glue_collapse</a></span>(<span class="st">"|"</span>)</a>
 <a class="sourceLine" id="cb5-2" data-line-number="2">na_type</a>
 <a class="sourceLine" id="cb5-3" data-line-number="3"><span class="co">#&gt; ^NA$|^NAC$|^NRA$|^NI$</span></a>
 <a class="sourceLine" id="cb5-4" data-line-number="4"></a>
 <a class="sourceLine" id="cb5-5" data-line-number="5">found &lt;-<span class="st"> </span><span class="kw"><a href="https://purrr.tidyverse.org/reference/map.html">map</a></span>(<span class="kw"><a href="reference/master.html">master</a></span>(), <span class="op">~</span><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/unique">unique</a></span>(<span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/grep">grep</a></span>(na_type, .x, <span class="dt">value =</span> <span class="ot">TRUE</span>)))</a>
-<a class="sourceLine" id="cb5-6" data-line-number="6"><span class="co">#&gt; Joining `allodb::equations` with `allodb::sitespecies` by 'equation_id'.</span></a>
-<a class="sourceLine" id="cb5-7" data-line-number="7"><span class="co">#&gt; Then joining with `allodb::sites_info` by 'site'.</span></a>
-<a class="sourceLine" id="cb5-8" data-line-number="8"><span class="kw"><a href="https://purrr.tidyverse.org/reference/keep.html">keep</a></span>(found, <span class="op">~</span><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/length">length</a></span>(.x) <span class="op">&gt;</span><span class="st"> </span><span class="dv">0</span>)</a>
-<a class="sourceLine" id="cb5-9" data-line-number="9"><span class="co">#&gt; $dbh_min_cm</span></a>
-<a class="sourceLine" id="cb5-10" data-line-number="10"><span class="co">#&gt; [1] "NI"  "NRA"</span></a>
-<a class="sourceLine" id="cb5-11" data-line-number="11"><span class="co">#&gt; </span></a>
-<a class="sourceLine" id="cb5-12" data-line-number="12"><span class="co">#&gt; $dbh_max_cm</span></a>
-<a class="sourceLine" id="cb5-13" data-line-number="13"><span class="co">#&gt; [1] "NI"  "NRA"</span></a>
-<a class="sourceLine" id="cb5-14" data-line-number="14"><span class="co">#&gt; </span></a>
-<a class="sourceLine" id="cb5-15" data-line-number="15"><span class="co">#&gt; $sample_size</span></a>
-<a class="sourceLine" id="cb5-16" data-line-number="16"><span class="co">#&gt; [1] "NRA"</span></a>
-<a class="sourceLine" id="cb5-17" data-line-number="17"><span class="co">#&gt; </span></a>
-<a class="sourceLine" id="cb5-18" data-line-number="18"><span class="co">#&gt; $other_equations_tested</span></a>
-<a class="sourceLine" id="cb5-19" data-line-number="19"><span class="co">#&gt; [1] "NRA"</span></a>
-<a class="sourceLine" id="cb5-20" data-line-number="20"><span class="co">#&gt; </span></a>
-<a class="sourceLine" id="cb5-21" data-line-number="21"><span class="co">#&gt; $bias_correction_factor</span></a>
-<a class="sourceLine" id="cb5-22" data-line-number="22"><span class="co">#&gt; [1] "NRA"</span></a></code></pre></div>
+<a class="sourceLine" id="cb5-6" data-line-number="6"><span class="co">#&gt; Joining `equations` and `sitespecies` by 'equation_id'; then `sites_info` by 'site'.</span></a>
+<a class="sourceLine" id="cb5-7" data-line-number="7"><span class="kw"><a href="https://purrr.tidyverse.org/reference/keep.html">keep</a></span>(found, <span class="op">~</span><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/length">length</a></span>(.x) <span class="op">&gt;</span><span class="st"> </span><span class="dv">0</span>)</a>
+<a class="sourceLine" id="cb5-8" data-line-number="8"><span class="co">#&gt; $dbh_min_cm</span></a>
+<a class="sourceLine" id="cb5-9" data-line-number="9"><span class="co">#&gt; [1] "NI"  "NRA"</span></a>
+<a class="sourceLine" id="cb5-10" data-line-number="10"><span class="co">#&gt; </span></a>
+<a class="sourceLine" id="cb5-11" data-line-number="11"><span class="co">#&gt; $dbh_max_cm</span></a>
+<a class="sourceLine" id="cb5-12" data-line-number="12"><span class="co">#&gt; [1] "NI"  "NRA"</span></a>
+<a class="sourceLine" id="cb5-13" data-line-number="13"><span class="co">#&gt; </span></a>
+<a class="sourceLine" id="cb5-14" data-line-number="14"><span class="co">#&gt; $sample_size</span></a>
+<a class="sourceLine" id="cb5-15" data-line-number="15"><span class="co">#&gt; [1] "NI"  "NRA"</span></a>
+<a class="sourceLine" id="cb5-16" data-line-number="16"><span class="co">#&gt; </span></a>
+<a class="sourceLine" id="cb5-17" data-line-number="17"><span class="co">#&gt; $other_equations_tested</span></a>
+<a class="sourceLine" id="cb5-18" data-line-number="18"><span class="co">#&gt; [1] "NRA"</span></a>
+<a class="sourceLine" id="cb5-19" data-line-number="19"><span class="co">#&gt; </span></a>
+<a class="sourceLine" id="cb5-20" data-line-number="20"><span class="co">#&gt; $bias_correction_factor</span></a>
+<a class="sourceLine" id="cb5-21" data-line-number="21"><span class="co">#&gt; [1] "NRA"</span></a></code></pre></div>
 <p>For analysis, set the correct type of each column with <code><a href="reference/set_type.html">set_type()</a></code>. Then not all columns will be character vectors.</p>
 <div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb6-1" data-line-number="1">converted &lt;-<span class="st"> </span><span class="kw"><a href="reference/set_type.html">set_type</a></span>(<span class="kw"><a href="reference/master.html">master</a></span>())</a>
-<a class="sourceLine" id="cb6-2" data-line-number="2"><span class="co">#&gt; Joining `allodb::equations` with `allodb::sitespecies` by 'equation_id'.</span></a>
-<a class="sourceLine" id="cb6-3" data-line-number="3"><span class="co">#&gt; Then joining with `allodb::sites_info` by 'site'.</span></a>
-<a class="sourceLine" id="cb6-4" data-line-number="4"><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/all">all</a></span>(<span class="kw"><a href="https://purrr.tidyverse.org/reference/map.html">map_lgl</a></span>(converted, is.character))</a>
-<a class="sourceLine" id="cb6-5" data-line-number="5"><span class="co">#&gt; [1] FALSE</span></a></code></pre></div>
+<a class="sourceLine" id="cb6-2" data-line-number="2"><span class="co">#&gt; Joining `equations` and `sitespecies` by 'equation_id'; then `sites_info` by 'site'.</span></a>
+<a class="sourceLine" id="cb6-3" data-line-number="3"><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/all">all</a></span>(<span class="kw"><a href="https://purrr.tidyverse.org/reference/map.html">map_lgl</a></span>(converted, is.character))</a>
+<a class="sourceLine" id="cb6-4" data-line-number="4"><span class="co">#&gt; [1] FALSE</span></a></code></pre></div>
 <p>Notice that all types to missing values will be coerced to <code>NA</code>.</p>
 <div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb7-1" data-line-number="1">found &lt;-<span class="st"> </span><span class="kw"><a href="https://purrr.tidyverse.org/reference/map.html">map</a></span>(converted, <span class="op">~</span><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/unique">unique</a></span>(<span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/grep">grep</a></span>(na_type, .x, <span class="dt">value =</span> <span class="ot">TRUE</span>)))</a>
 <a class="sourceLine" id="cb7-2" data-line-number="2">result &lt;-<span class="st"> </span><span class="kw"><a href="https://purrr.tidyverse.org/reference/keep.html">keep</a></span>(found, <span class="op">~</span><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/length">length</a></span>(.x) <span class="op">&gt;</span><span class="st"> </span><span class="dv">0</span>)</a>
@@ -179,7 +175,7 @@
 <a class="sourceLine" id="cb8-6" data-line-number="6"></a>
 <a class="sourceLine" id="cb8-7" data-line-number="7"><span class="kw"><a href="https://www.rdocumentation.org/packages/datasets/topics/datasets-package">datasets</a></span>(<span class="st">"allodb"</span>)</a>
 <a class="sourceLine" id="cb8-8" data-line-number="8"><span class="co">#&gt; $equations</span></a>
-<a class="sourceLine" id="cb8-9" data-line-number="9"><span class="co">#&gt; # A tibble: 174 x 22</span></a>
+<a class="sourceLine" id="cb8-9" data-line-number="9"><span class="co">#&gt; # A tibble: 176 x 22</span></a>
 <a class="sourceLine" id="cb8-10" data-line-number="10"><span class="co">#&gt;    ref_id equation_id equation_allome… equation_form dependent_varia…</span></a>
 <a class="sourceLine" id="cb8-11" data-line-number="11"><span class="co">#&gt;    &lt;chr&gt;  &lt;chr&gt;       &lt;chr&gt;            &lt;chr&gt;         &lt;chr&gt;           </span></a>
 <a class="sourceLine" id="cb8-12" data-line-number="12"><span class="co">#&gt;  1 jenki… 2060ea      10^(1.1891+1.41… 10^(a+b*(log… Total abovegrou…</span></a>
@@ -192,7 +188,7 @@
 <a class="sourceLine" id="cb8-19" data-line-number="19"><span class="co">#&gt;  8 chojn… 7f7777      exp(-2.5095+2.5… exp(a+b*log(… Total abovegrou…</span></a>
 <a class="sourceLine" id="cb8-20" data-line-number="20"><span class="co">#&gt;  9 jenki… cf733d      exp(5.67+1.97*l… exp(a+b*log(… Total abovegrou…</span></a>
 <a class="sourceLine" id="cb8-21" data-line-number="21"><span class="co">#&gt; 10 chojn… f08fff      exp(-2.2118+2.4… exp(a+b*log(… Total abovegrou…</span></a>
-<a class="sourceLine" id="cb8-22" data-line-number="22"><span class="co">#&gt; # … with 164 more rows, and 17 more variables: independent_variable &lt;chr&gt;,</span></a>
+<a class="sourceLine" id="cb8-22" data-line-number="22"><span class="co">#&gt; # … with 166 more rows, and 17 more variables: independent_variable &lt;chr&gt;,</span></a>
 <a class="sourceLine" id="cb8-23" data-line-number="23"><span class="co">#&gt; #   allometry_specificity &lt;chr&gt;, geographic_area &lt;chr&gt;, dbh_min_cm &lt;chr&gt;,</span></a>
 <a class="sourceLine" id="cb8-24" data-line-number="24"><span class="co">#&gt; #   dbh_max_cm &lt;chr&gt;, sample_size &lt;chr&gt;, dbh_units_original &lt;chr&gt;,</span></a>
 <a class="sourceLine" id="cb8-25" data-line-number="25"><span class="co">#&gt; #   biomass_units_original &lt;chr&gt;, allometry_development_method &lt;chr&gt;,</span></a>
@@ -255,7 +251,7 @@
 <a class="sourceLine" id="cb8-82" data-line-number="82"><span class="co">#&gt; # … with 53 more rows, and 2 more variables: E &lt;chr&gt;, wsg.site.name &lt;chr&gt;</span></a>
 <a class="sourceLine" id="cb8-83" data-line-number="83"><span class="co">#&gt; </span></a>
 <a class="sourceLine" id="cb8-84" data-line-number="84"><span class="co">#&gt; $sitespecies</span></a>
-<a class="sourceLine" id="cb8-85" data-line-number="85"><span class="co">#&gt; # A tibble: 742 x 11</span></a>
+<a class="sourceLine" id="cb8-85" data-line-number="85"><span class="co">#&gt; # A tibble: 766 x 11</span></a>
 <a class="sourceLine" id="cb8-86" data-line-number="86"><span class="co">#&gt;    site  family species species_code life_form equation_group equation_id</span></a>
 <a class="sourceLine" id="cb8-87" data-line-number="87"><span class="co">#&gt;    &lt;chr&gt; &lt;chr&gt;  &lt;chr&gt;   &lt;chr&gt;        &lt;chr&gt;     &lt;chr&gt;          &lt;chr&gt;      </span></a>
 <a class="sourceLine" id="cb8-88" data-line-number="88"><span class="co">#&gt;  1 Lill… Sapin… Acer r… 316          Tree      Expert         7c72ed     </span></a>
@@ -268,7 +264,7 @@
 <a class="sourceLine" id="cb8-95" data-line-number="95"><span class="co">#&gt;  8 Lill… Betul… Carpin… 391          Tree      Generic        ae65ed     </span></a>
 <a class="sourceLine" id="cb8-96" data-line-number="96"><span class="co">#&gt;  9 Lill… Jugla… Carya … 409          Tree      Expert         9c4cc9     </span></a>
 <a class="sourceLine" id="cb8-97" data-line-number="97"><span class="co">#&gt; 10 Lill… Jugla… Carya … 402          Tree      Expert         9c4cc9     </span></a>
-<a class="sourceLine" id="cb8-98" data-line-number="98"><span class="co">#&gt; # … with 732 more rows, and 4 more variables: equation_taxa &lt;chr&gt;,</span></a>
+<a class="sourceLine" id="cb8-98" data-line-number="98"><span class="co">#&gt; # … with 756 more rows, and 4 more variables: equation_taxa &lt;chr&gt;,</span></a>
 <a class="sourceLine" id="cb8-99" data-line-number="99"><span class="co">#&gt; #   notes_on_species &lt;chr&gt;, wsg_id &lt;chr&gt;, wsg_specificity &lt;chr&gt;</span></a>
 <a class="sourceLine" id="cb8-100" data-line-number="100"><span class="co">#&gt; </span></a>
 <a class="sourceLine" id="cb8-101" data-line-number="101"><span class="co">#&gt; $sitespecies_metadata</span></a>
