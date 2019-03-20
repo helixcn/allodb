@@ -141,10 +141,10 @@
 <a class="sourceLine" id="cb5-6" data-line-number="6"><span class="co">#&gt; Joining `equations` and `sitespecies` by 'equation_id'; then `sites_info` by 'site'.</span></a>
 <a class="sourceLine" id="cb5-7" data-line-number="7"><span class="kw"><a href="https://purrr.tidyverse.org/reference/keep.html">keep</a></span>(found, <span class="op">~</span><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/length">length</a></span>(.x) <span class="op">&gt;</span><span class="st"> </span><span class="dv">0</span>)</a>
 <a class="sourceLine" id="cb5-8" data-line-number="8"><span class="co">#&gt; $dbh_min_cm</span></a>
-<a class="sourceLine" id="cb5-9" data-line-number="9"><span class="co">#&gt; [1] "NI"  "NRA"</span></a>
+<a class="sourceLine" id="cb5-9" data-line-number="9"><span class="co">#&gt; [1] "NRA"</span></a>
 <a class="sourceLine" id="cb5-10" data-line-number="10"><span class="co">#&gt; </span></a>
 <a class="sourceLine" id="cb5-11" data-line-number="11"><span class="co">#&gt; $dbh_max_cm</span></a>
-<a class="sourceLine" id="cb5-12" data-line-number="12"><span class="co">#&gt; [1] "NI"  "NRA"</span></a>
+<a class="sourceLine" id="cb5-12" data-line-number="12"><span class="co">#&gt; [1] "NRA"</span></a>
 <a class="sourceLine" id="cb5-13" data-line-number="13"><span class="co">#&gt; </span></a>
 <a class="sourceLine" id="cb5-14" data-line-number="14"><span class="co">#&gt; $sample_size</span></a>
 <a class="sourceLine" id="cb5-15" data-line-number="15"><span class="co">#&gt; [1] "NI"  "NRA"</span></a>
@@ -235,35 +235,35 @@
 <a class="sourceLine" id="cb8-66" data-line-number="66"><span class="co">#&gt; 7 7 / G  References fu… Full citation (kept for easy use)     character (s…</span></a>
 <a class="sourceLine" id="cb8-67" data-line-number="67"><span class="co">#&gt; </span></a>
 <a class="sourceLine" id="cb8-68" data-line-number="68"><span class="co">#&gt; $sites_info</span></a>
-<a class="sourceLine" id="cb8-69" data-line-number="69"><span class="co">#&gt; # A tibble: 63 x 12</span></a>
+<a class="sourceLine" id="cb8-69" data-line-number="69"><span class="co">#&gt; # A tibble: 68 x 12</span></a>
 <a class="sourceLine" id="cb8-70" data-line-number="70"><span class="co">#&gt;    id    Site  site  lat   long  UTM_Zone UTM_X UTM_Y intertropical size.ha</span></a>
 <a class="sourceLine" id="cb8-71" data-line-number="71"><span class="co">#&gt;    &lt;chr&gt; &lt;chr&gt; &lt;chr&gt; &lt;chr&gt; &lt;chr&gt; &lt;chr&gt;    &lt;chr&gt; &lt;chr&gt; &lt;chr&gt;         &lt;chr&gt;  </span></a>
 <a class="sourceLine" id="cb8-72" data-line-number="72"><span class="co">#&gt;  1 42    Amac… amac… -3.81 -70.… 19       3592… 9578… Tropical      25     </span></a>
 <a class="sourceLine" id="cb8-73" data-line-number="73"><span class="co">#&gt;  2 51    Bada… bada… 29.46 110.… 49       4534… 3259… Other         25     </span></a>
 <a class="sourceLine" id="cb8-74" data-line-number="74"><span class="co">#&gt;  3 52    Baot… baot… 33.5  111.… 49       5873… 3706… Other         25     </span></a>
-<a class="sourceLine" id="cb8-75" data-line-number="75"><span class="co">#&gt;  4 45    Barr… barr… 9.15  -79.… 17       6267… 1012… Tropical      50     </span></a>
+<a class="sourceLine" id="cb8-75" data-line-number="75"><span class="co">#&gt;  4 45    Barr… bci   9.15  -79.… 17       6267… 1012… Tropical      50     </span></a>
 <a class="sourceLine" id="cb8-76" data-line-number="76"><span class="co">#&gt;  5 18    Buki… buki… 1.35  103.… 48       3642… 1492… Tropical      4      </span></a>
 <a class="sourceLine" id="cb8-77" data-line-number="77"><span class="co">#&gt;  6 53    Chan… chan… 42.38 128.… 52       4245… 4692… Other         25     </span></a>
 <a class="sourceLine" id="cb8-78" data-line-number="78"><span class="co">#&gt;  7 46    Coco… coco… 8.99  -79.… 17       6520… 9937… Tropical      4      </span></a>
 <a class="sourceLine" id="cb8-79" data-line-number="79"><span class="co">#&gt;  8 14    Danu… danu… 5.1   117.… 50       5762… 5639… Tropical      50     </span></a>
 <a class="sourceLine" id="cb8-80" data-line-number="80"><span class="co">#&gt;  9 7     Ding… ding… 23.17 112.… 49       6546… 2563… Tropical      20     </span></a>
 <a class="sourceLine" id="cb8-81" data-line-number="81"><span class="co">#&gt; 10 25    Doi … doi … 18.58 98.43 47       4402… 2054… Tropical      15     </span></a>
-<a class="sourceLine" id="cb8-82" data-line-number="82"><span class="co">#&gt; # … with 53 more rows, and 2 more variables: E &lt;chr&gt;, wsg.site.name &lt;chr&gt;</span></a>
+<a class="sourceLine" id="cb8-82" data-line-number="82"><span class="co">#&gt; # … with 58 more rows, and 2 more variables: E &lt;chr&gt;, wsg.site.name &lt;chr&gt;</span></a>
 <a class="sourceLine" id="cb8-83" data-line-number="83"><span class="co">#&gt; </span></a>
 <a class="sourceLine" id="cb8-84" data-line-number="84"><span class="co">#&gt; $sitespecies</span></a>
 <a class="sourceLine" id="cb8-85" data-line-number="85"><span class="co">#&gt; # A tibble: 772 x 11</span></a>
 <a class="sourceLine" id="cb8-86" data-line-number="86"><span class="co">#&gt;    site  family species species_code life_form equation_group equation_id</span></a>
 <a class="sourceLine" id="cb8-87" data-line-number="87"><span class="co">#&gt;    &lt;chr&gt; &lt;chr&gt;  &lt;chr&gt;   &lt;chr&gt;        &lt;chr&gt;     &lt;chr&gt;          &lt;chr&gt;      </span></a>
-<a class="sourceLine" id="cb8-88" data-line-number="88"><span class="co">#&gt;  1 Lill… Sapin… Acer r… 316          Tree      Expert         7c72ed     </span></a>
-<a class="sourceLine" id="cb8-89" data-line-number="89"><span class="co">#&gt;  2 Lill… Sapin… Acer r… 316          Tree      Expert         2060ea     </span></a>
-<a class="sourceLine" id="cb8-90" data-line-number="90"><span class="co">#&gt;  3 Lill… Sapin… Acer s… 318          Tree      Expert         a4d879     </span></a>
-<a class="sourceLine" id="cb8-91" data-line-number="91"><span class="co">#&gt;  4 Lill… Rosac… Amelan… 356          Tree      Expert         c59e03     </span></a>
-<a class="sourceLine" id="cb8-92" data-line-number="92"><span class="co">#&gt;  5 Lill… Rosac… Amelan… 356          Tree      Expert         96c0af     </span></a>
-<a class="sourceLine" id="cb8-93" data-line-number="93"><span class="co">#&gt;  6 Lill… Rosac… Amelan… 356          Tree      Expert         529234     </span></a>
-<a class="sourceLine" id="cb8-94" data-line-number="94"><span class="co">#&gt;  7 Lill… Annon… Asimin… 367          Tree      Generic        ae65ed     </span></a>
-<a class="sourceLine" id="cb8-95" data-line-number="95"><span class="co">#&gt;  8 Lill… Betul… Carpin… 391          Tree      Generic        ae65ed     </span></a>
-<a class="sourceLine" id="cb8-96" data-line-number="96"><span class="co">#&gt;  9 Lill… Jugla… Carya … 409          Tree      Expert         9c4cc9     </span></a>
-<a class="sourceLine" id="cb8-97" data-line-number="97"><span class="co">#&gt; 10 Lill… Jugla… Carya … 402          Tree      Expert         9c4cc9     </span></a>
+<a class="sourceLine" id="cb8-88" data-line-number="88"><span class="co">#&gt;  1 lill… Sapin… Acer r… 316          Tree      Expert         7c72ed     </span></a>
+<a class="sourceLine" id="cb8-89" data-line-number="89"><span class="co">#&gt;  2 lill… Sapin… Acer r… 316          Tree      Expert         2060ea     </span></a>
+<a class="sourceLine" id="cb8-90" data-line-number="90"><span class="co">#&gt;  3 lill… Sapin… Acer s… 318          Tree      Expert         a4d879     </span></a>
+<a class="sourceLine" id="cb8-91" data-line-number="91"><span class="co">#&gt;  4 lill… Rosac… Amelan… 356          Tree      Expert         c59e03     </span></a>
+<a class="sourceLine" id="cb8-92" data-line-number="92"><span class="co">#&gt;  5 lill… Rosac… Amelan… 356          Tree      Expert         96c0af     </span></a>
+<a class="sourceLine" id="cb8-93" data-line-number="93"><span class="co">#&gt;  6 lill… Rosac… Amelan… 356          Tree      Expert         529234     </span></a>
+<a class="sourceLine" id="cb8-94" data-line-number="94"><span class="co">#&gt;  7 lill… Annon… Asimin… 367          Tree      Generic        ae65ed     </span></a>
+<a class="sourceLine" id="cb8-95" data-line-number="95"><span class="co">#&gt;  8 lill… Betul… Carpin… 391          Tree      Generic        ae65ed     </span></a>
+<a class="sourceLine" id="cb8-96" data-line-number="96"><span class="co">#&gt;  9 lill… Jugla… Carya … 409          Tree      Expert         9c4cc9     </span></a>
+<a class="sourceLine" id="cb8-97" data-line-number="97"><span class="co">#&gt; 10 lill… Jugla… Carya … 402          Tree      Expert         9c4cc9     </span></a>
 <a class="sourceLine" id="cb8-98" data-line-number="98"><span class="co">#&gt; # … with 762 more rows, and 4 more variables: equation_taxa &lt;chr&gt;,</span></a>
 <a class="sourceLine" id="cb8-99" data-line-number="99"><span class="co">#&gt; #   notes_on_species &lt;chr&gt;, wsg_id &lt;chr&gt;, wsg_specificity &lt;chr&gt;</span></a>
 <a class="sourceLine" id="cb8-100" data-line-number="100"><span class="co">#&gt; </span></a>
