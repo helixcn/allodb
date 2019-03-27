@@ -102,7 +102,7 @@
 <p>Combined data-base tables.</p>
 <div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb3-1" data-line-number="1"><span class="kw"><a href="reference/master.html">master</a></span>()</a>
 <a class="sourceLine" id="cb3-2" data-line-number="2"><span class="co">#&gt; Joining `equations` and `sitespecies` by 'equation_id'; then `sites_info` by 'site'.</span></a>
-<a class="sourceLine" id="cb3-3" data-line-number="3"><span class="co">#&gt; # A tibble: 769 x 43</span></a>
+<a class="sourceLine" id="cb3-3" data-line-number="3"><span class="co">#&gt; # A tibble: 780 x 43</span></a>
 <a class="sourceLine" id="cb3-4" data-line-number="4"><span class="co">#&gt;    ref_id equation_id equation_allome… equation_form dependent_varia…</span></a>
 <a class="sourceLine" id="cb3-5" data-line-number="5"><span class="co">#&gt;    &lt;chr&gt;  &lt;chr&gt;       &lt;chr&gt;            &lt;chr&gt;         &lt;chr&gt;           </span></a>
 <a class="sourceLine" id="cb3-6" data-line-number="6"><span class="co">#&gt;  1 jenki… 2060ea      10^(1.1891+1.41… 10^(a+b*(log… Total abovegrou…</span></a>
@@ -115,7 +115,7 @@
 <a class="sourceLine" id="cb3-13" data-line-number="13"><span class="co">#&gt;  8 jenki… c59e03      exp(7.217+1.514… exp(a+b*log(… Stem biomass (w…</span></a>
 <a class="sourceLine" id="cb3-14" data-line-number="14"><span class="co">#&gt;  9 jenki… c59e03      exp(7.217+1.514… exp(a+b*log(… Stem biomass (w…</span></a>
 <a class="sourceLine" id="cb3-15" data-line-number="15"><span class="co">#&gt; 10 jenki… c59e03      exp(7.217+1.514… exp(a+b*log(… Stem biomass (w…</span></a>
-<a class="sourceLine" id="cb3-16" data-line-number="16"><span class="co">#&gt; # … with 759 more rows, and 38 more variables: independent_variable &lt;chr&gt;,</span></a>
+<a class="sourceLine" id="cb3-16" data-line-number="16"><span class="co">#&gt; # … with 770 more rows, and 38 more variables: independent_variable &lt;chr&gt;,</span></a>
 <a class="sourceLine" id="cb3-17" data-line-number="17"><span class="co">#&gt; #   allometry_specificity &lt;chr&gt;, geographic_area &lt;chr&gt;, dbh_min_cm &lt;chr&gt;,</span></a>
 <a class="sourceLine" id="cb3-18" data-line-number="18"><span class="co">#&gt; #   dbh_max_cm &lt;chr&gt;, sample_size &lt;chr&gt;, dbh_units_original &lt;chr&gt;,</span></a>
 <a class="sourceLine" id="cb3-19" data-line-number="19"><span class="co">#&gt; #   biomass_units_original &lt;chr&gt;, allometry_development_method &lt;chr&gt;,</span></a>
@@ -251,7 +251,7 @@
 <a class="sourceLine" id="cb8-82" data-line-number="82"><span class="co">#&gt; # … with 58 more rows, and 2 more variables: E &lt;chr&gt;, wsg.site.name &lt;chr&gt;</span></a>
 <a class="sourceLine" id="cb8-83" data-line-number="83"><span class="co">#&gt; </span></a>
 <a class="sourceLine" id="cb8-84" data-line-number="84"><span class="co">#&gt; $sitespecies</span></a>
-<a class="sourceLine" id="cb8-85" data-line-number="85"><span class="co">#&gt; # A tibble: 772 x 11</span></a>
+<a class="sourceLine" id="cb8-85" data-line-number="85"><span class="co">#&gt; # A tibble: 783 x 11</span></a>
 <a class="sourceLine" id="cb8-86" data-line-number="86"><span class="co">#&gt;    site  family species species_code life_form equation_group equation_id</span></a>
 <a class="sourceLine" id="cb8-87" data-line-number="87"><span class="co">#&gt;    &lt;chr&gt; &lt;chr&gt;  &lt;chr&gt;   &lt;chr&gt;        &lt;chr&gt;     &lt;chr&gt;          &lt;chr&gt;      </span></a>
 <a class="sourceLine" id="cb8-88" data-line-number="88"><span class="co">#&gt;  1 lill… Sapin… Acer r… 316          Tree      Expert         7c72ed     </span></a>
@@ -264,7 +264,7 @@
 <a class="sourceLine" id="cb8-95" data-line-number="95"><span class="co">#&gt;  8 lill… Betul… Carpin… 391          Tree      Generic        ae65ed     </span></a>
 <a class="sourceLine" id="cb8-96" data-line-number="96"><span class="co">#&gt;  9 lill… Jugla… Carya … 409          Tree      Expert         9c4cc9     </span></a>
 <a class="sourceLine" id="cb8-97" data-line-number="97"><span class="co">#&gt; 10 lill… Jugla… Carya … 402          Tree      Expert         9c4cc9     </span></a>
-<a class="sourceLine" id="cb8-98" data-line-number="98"><span class="co">#&gt; # … with 762 more rows, and 4 more variables: equation_taxa &lt;chr&gt;,</span></a>
+<a class="sourceLine" id="cb8-98" data-line-number="98"><span class="co">#&gt; # … with 773 more rows, and 4 more variables: equation_taxa &lt;chr&gt;,</span></a>
 <a class="sourceLine" id="cb8-99" data-line-number="99"><span class="co">#&gt; #   notes_on_species &lt;chr&gt;, wsg_id &lt;chr&gt;, wsg_specificity &lt;chr&gt;</span></a>
 <a class="sourceLine" id="cb8-100" data-line-number="100"><span class="co">#&gt; </span></a>
 <a class="sourceLine" id="cb8-101" data-line-number="101"><span class="co">#&gt; $sitespecies_metadata</span></a>
