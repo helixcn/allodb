@@ -153,7 +153,7 @@ kinds of missing values.</p></li>
 #&gt; <span class='message'>Attaching package: ‘purrr’</span></div><div class='output co'>#&gt; <span class='message'>The following object is masked from ‘package:testthat’:</span>
 #&gt; <span class='message'></span>
 #&gt; <span class='message'>    is_null</span></div><div class='input'>
-<span class='fu'>master</span>()</div><div class='output co'>#&gt; <span class='message'>Joining `equations` and `sitespecies` by 'equation_id'; then `sites_info` by 'site'.</span></div><div class='output co'>#&gt; # A tibble: 780 x 43
+<span class='fu'>master</span>()</div><div class='output co'>#&gt; <span class='message'>Joining `equations` and `sitespecies` by 'equation_id'; then `sites_info` by 'site'.</span></div><div class='output co'>#&gt; # A tibble: 790 x 44
 #&gt;    ref_id equation_id equation_allome… equation_form dependent_varia…
 #&gt;    &lt;chr&gt;  &lt;chr&gt;       &lt;chr&gt;            &lt;chr&gt;         &lt;chr&gt;           
 #&gt;  1 jenki… 2060ea      10^(1.1891+1.41… 10^(a+b*(log… Total abovegrou…
@@ -166,19 +166,19 @@ kinds of missing values.</p></li>
 #&gt;  8 jenki… c59e03      exp(7.217+1.514… exp(a+b*log(… Stem biomass (w…
 #&gt;  9 jenki… c59e03      exp(7.217+1.514… exp(a+b*log(… Stem biomass (w…
 #&gt; 10 jenki… c59e03      exp(7.217+1.514… exp(a+b*log(… Stem biomass (w…
-#&gt; # … with 770 more rows, and 38 more variables: independent_variable &lt;chr&gt;,
+#&gt; # … with 780 more rows, and 39 more variables: independent_variable &lt;chr&gt;,
 #&gt; #   allometry_specificity &lt;chr&gt;, geographic_area &lt;chr&gt;, dbh_min_cm &lt;chr&gt;,
 #&gt; #   dbh_max_cm &lt;chr&gt;, sample_size &lt;chr&gt;, dbh_units_original &lt;chr&gt;,
 #&gt; #   biomass_units_original &lt;chr&gt;, allometry_development_method &lt;chr&gt;,
 #&gt; #   regression_model &lt;chr&gt;, other_equations_tested &lt;chr&gt;, log_biomass &lt;chr&gt;,
 #&gt; #   bias_corrected &lt;chr&gt;, bias_correction_factor &lt;chr&gt;,
-#&gt; #   notes_fitting_model &lt;chr&gt;, original_data_availability &lt;chr&gt;, warning &lt;chr&gt;,
-#&gt; #   site &lt;chr&gt;, family &lt;chr&gt;, species &lt;chr&gt;, species_code &lt;chr&gt;,
-#&gt; #   life_form &lt;chr&gt;, equation_group &lt;chr&gt;, equation_taxa &lt;chr&gt;,
-#&gt; #   notes_on_species &lt;chr&gt;, wsg_id &lt;chr&gt;, wsg_specificity &lt;chr&gt;, id &lt;chr&gt;,
-#&gt; #   Site &lt;chr&gt;, lat &lt;chr&gt;, long &lt;chr&gt;, UTM_Zone &lt;chr&gt;, UTM_X &lt;chr&gt;,
-#&gt; #   UTM_Y &lt;chr&gt;, intertropical &lt;chr&gt;, size.ha &lt;chr&gt;, E &lt;chr&gt;,
-#&gt; #   wsg.site.name &lt;chr&gt;</div><div class='input'>
+#&gt; #   notes_fitting_model &lt;chr&gt;, original_equation_id &lt;chr&gt;,
+#&gt; #   original_data_availability &lt;chr&gt;, warning &lt;chr&gt;, site &lt;chr&gt;, family &lt;chr&gt;,
+#&gt; #   species &lt;chr&gt;, species_code &lt;chr&gt;, life_form &lt;chr&gt;, equation_group &lt;chr&gt;,
+#&gt; #   equation_taxa &lt;chr&gt;, notes_on_species &lt;chr&gt;, wsg_id &lt;chr&gt;,
+#&gt; #   wsg_specificity &lt;chr&gt;, id &lt;chr&gt;, Site &lt;chr&gt;, lat &lt;chr&gt;, long &lt;chr&gt;,
+#&gt; #   UTM_Zone &lt;chr&gt;, UTM_X &lt;chr&gt;, UTM_Y &lt;chr&gt;, intertropical &lt;chr&gt;,
+#&gt; #   size.ha &lt;chr&gt;, E &lt;chr&gt;, wsg.site.name &lt;chr&gt;</div><div class='input'>
 <span class='co'># Columns are of type "character"</span>
 <span class='fu'>master</span>() <span class='kw'>%&gt;%</span>
   <span class='kw pkg'>purrr</span><span class='kw ns'>::</span><span class='fu'><a href='https://purrr.tidyverse.org/reference/map.html'>map_chr</a></span>(<span class='no'>typeof</span>) <span class='kw'>%&gt;%</span>
